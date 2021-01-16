@@ -1,9 +1,7 @@
-package longest_substring_without_repeating_characters_3
+package main
 
 import "math"
 
-// LengthOfLongestSubstring, given a string s, finds the length of the longest
-// substring without repeating characters.
 func LengthOfLongestSubstring(s string) int {
 	l,longest := 0, 0;
 	set := make(map[rune]int)

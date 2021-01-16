@@ -1,7 +1,5 @@
-package two_sum_1
+package main
 
-// TwoSum, given an array of integers, returns indices of the two numbers such
-// that they add up to a specific target.
 func TwoSum(nums []int, target int) []int {
 	sum := []int{0,0}
 	complements := make(map[int]int)
