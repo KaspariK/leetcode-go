@@ -18,7 +18,7 @@ func TestTwoSum(t *testing.T) {
 		got := TwoSum(tc.items, tc.target)
 
 		if !reflect.DeepEqual(tc.want, got) {
-			t.Errorf("%s: expected: %v, got: %v", name, tc.want, got)
+			t.Errorf("%s: expected '%v', got '%v'", name, tc.want, got)
 		}
 	}
 }

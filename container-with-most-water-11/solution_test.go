@@ -18,7 +18,7 @@ func TestMaxArea(t *testing.T) {
 		got := MaxArea(tc.heights)
 
 		if tc.want != got {
-			t.Errorf("%s: expected: %v, got: %v", name, tc.want, got)
+			t.Errorf("%s: expected '%v', got '%v'", name, tc.want, got)
 		}
 	}
 }

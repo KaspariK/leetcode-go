@@ -20,7 +20,7 @@ func TestLengthOfLongestSubstring(t *testing.T) {
 		got := LengthOfLongestSubstring(tc.items)
 
 		if tc.want != got {
-			t.Errorf("%s: expected: %v, got: %v", name, tc.want, got)
+			t.Errorf("%s: expected '%v', got '%v'", name, tc.want, got)
 		}
 	}
 }
