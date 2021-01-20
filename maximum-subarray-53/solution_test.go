@@ -13,6 +13,7 @@ func TestMaxSubArray(t *testing.T) {
 		"Test Case 4": {input: []int{-1}, want: -1},
 		"Test Case 5": {input: []int{-100000}, want: -100000},
 		"Test Case 6": {input: []int{-2,-1,-3,-4,-1,-2,-1,-5,-4}, want: -1},
+		"Test Case 7": {input: []int{0, 0, 0}, want: 0},
 	}
 
 	for name, tc := range tests {
