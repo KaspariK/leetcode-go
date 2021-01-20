@@ -9,11 +9,11 @@ func TestLengthOfLongestSubstring(t *testing.T) {
 		items string
 		want int
 	}{
-		"Test 1": {items: "kevin", want: 5},
-		"Test 2": {items: "keevin", want: 4},
-		"Test 3": {items: "pwfeewv", want: 4},
-		"Test 4": {items: "ww", want: 1},
-		"Test 5": {items: "abcabcbb", want: 3},
+		"Test Case 1": {items: "kevin", want: 5},
+		"Test Case 2": {items: "keevin", want: 4},
+		"Test Case 3": {items: "pwfeewv", want: 4},
+		"Test Case 4": {items: "ww", want: 1},
+		"Test Case 5": {items: "abcabcbb", want: 3},
 	}
 
 	for name, tc := range tests {
