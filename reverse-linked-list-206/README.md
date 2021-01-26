@@ -1,8 +1,6 @@
 # 206. Reverse Linked List
 
-```diff
-+ Easy
-```
+Difficulty: Easy
 
 Reverse a singly linked list
 
