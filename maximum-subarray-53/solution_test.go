@@ -1,4 +1,4 @@
-package main
+package maximum_subarray_53
 
 import "testing"
 
@@ -17,7 +17,7 @@ func TestMaxSubArray(t *testing.T) {
 	}
 
 	for name, tc := range tests {
-		got := MaxSubArray(tc.input)
+		got := maxSubArray(tc.input)
 
 		if got != tc.want {
 			t.Errorf("%s: expected '%v', got '%v'", name, tc.want, got)

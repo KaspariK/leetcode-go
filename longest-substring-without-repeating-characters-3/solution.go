@@ -1,8 +1,8 @@
-package main
+package longest_substring_without_repeating_characters_3
 
 import "math"
 
-func LengthOfLongestSubstring(s string) int {
+func lengthOfLongestSubstring(s string) int {
 	l,longest := 0, 0;
 	set := make(map[rune]int)
 

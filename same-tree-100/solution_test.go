@@ -1,4 +1,4 @@
-package main
+package same_tree_100
 
 import (
 	"testing"
@@ -92,7 +92,7 @@ func TestIsSameTree(t *testing.T) {
 	}
 
 	for name, tc := range tests {
-		got := IsSameTree(&tc.treeOne, &tc.treeTwo)
+		got := isSameTree(&tc.treeOne, &tc.treeTwo)
 
 		if got != tc.want {
 			t.Errorf("%s: expected '%v', got '%v'", name, tc.want, got)

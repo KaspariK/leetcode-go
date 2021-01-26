@@ -1,4 +1,4 @@
-package main
+package valid_parentheses_20
 
 import "testing"
 
@@ -18,7 +18,7 @@ func TestIsValid(t *testing.T) {
 	}
 
 	for name, tc := range tests {
-		got := IsValid(tc.input)
+		got := isValid(tc.input)
 
 		if got != tc.want {
 			t.Errorf("%s: expected '%v', got '%v'", name, tc.want, got)

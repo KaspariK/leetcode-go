@@ -1,7 +1,7 @@
-package main
+package climbing_stairs_70
 
 // DP solution
-//func ClimbStairs(n int) int {
+//func climbStairs(n int) int {
 //	subProbs := make([]int, n + 1)
 //	subProbs[0] = 1
 //	subProbs[1] = 1
@@ -14,7 +14,7 @@ package main
 //}
 
 // Fibonacci solution
-func ClimbStairs(n int) int {
+func climbStairs(n int) int {
 	if n == 1 {
 		return 1
 	}

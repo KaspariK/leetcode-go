@@ -1,6 +1,6 @@
-package main
+package best_time_to_buy_and_sell_stock_121
 
-func MaxProfit(prices []int) int {
+func maxProfit(prices []int) int {
 	if len(prices) < 2 {
 		return 0
 	}

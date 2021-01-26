@@ -1,4 +1,4 @@
-package main
+package same_tree_100
 
 type TreeNode struct {
     Val int
@@ -6,7 +6,7 @@ type TreeNode struct {
     Right *TreeNode
 }
 
-func IsSameTree(p *TreeNode, q *TreeNode) bool {
+func isSameTree(p *TreeNode, q *TreeNode) bool {
 	if p == nil && q == nil {
 		return true
 	}
@@ -19,5 +19,5 @@ func IsSameTree(p *TreeNode, q *TreeNode) bool {
 		return false
 	}
 
-	return IsSameTree(p.Left, q.Left) && IsSameTree(p.Right, q.Right)
+	return isSameTree(p.Left, q.Left) && isSameTree(p.Right, q.Right)
 }

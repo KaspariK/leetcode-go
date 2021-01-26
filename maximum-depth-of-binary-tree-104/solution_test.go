@@ -1,4 +1,4 @@
-package main
+package maximum_depth_of_binary_tree_104
 
 import "testing"
 
@@ -53,7 +53,7 @@ func TestMaxDepth(t *testing.T) {
 	}
 
 	for name, tc := range tests {
-		got := MaxDepth(tc.input)
+		got := maxDepth(tc.input)
 
 		if got != tc.want {
 			t.Errorf("%s: expected '%v', got '%v'", name, tc.want, got)

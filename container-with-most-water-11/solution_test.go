@@ -1,4 +1,4 @@
-package main
+package container_with_most_water_11
 
 import (
 	"testing"
@@ -15,7 +15,7 @@ func TestMaxArea(t *testing.T) {
 	}
 
 	for name, tc := range tests {
-		got := MaxArea(tc.heights)
+		got := maxArea(tc.heights)
 
 		if tc.want != got {
 			t.Errorf("%s: expected '%v', got '%v'", name, tc.want, got)

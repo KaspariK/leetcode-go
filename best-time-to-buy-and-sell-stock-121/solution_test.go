@@ -1,4 +1,4 @@
-package main
+package best_time_to_buy_and_sell_stock_121
 
 import "testing"
 
@@ -15,7 +15,7 @@ func TestMaxProfit(t *testing.T) {
 	}
 
 	for name, tc := range tests {
-		got := MaxProfit(tc.input)
+		got := maxProfit(tc.input)
 
 		if got != tc.want {
 			t.Errorf("%s: expected '%v', got '%v'", name, tc.want, got)

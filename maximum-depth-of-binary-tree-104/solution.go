@@ -1,4 +1,4 @@
-package main
+package maximum_depth_of_binary_tree_104
 
 type TreeNode struct {
     Val int
@@ -6,13 +6,13 @@ type TreeNode struct {
     Right *TreeNode
 }
 
-func MaxDepth(root *TreeNode) int {
+func maxDepth(root *TreeNode) int {
 	if root == nil {
 		return 0
 	}
 
-	left := MaxDepth(root.Left)
-	right := MaxDepth(root.Right)
+	left := maxDepth(root.Left)
+	right := maxDepth(root.Right)
 
 	return maxInt(left, right) + 1
 }

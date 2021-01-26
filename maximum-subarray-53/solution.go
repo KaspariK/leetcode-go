@@ -1,11 +1,10 @@
-package main
+package maximum_subarray_53
 
 import (
-	"fmt"
 	"math"
 )
 
-func MaxSubArray(nums []int) int {
+func maxSubArray(nums []int) int {
 	if len(nums) == 1 {
 		return nums[0]
 	}
@@ -31,8 +30,4 @@ func maxInt(a, b int) int {
 		return a
 	}
 	return b
-}
-
-func main() {
-	fmt.Println(MaxSubArray([]int{-2,-1,-3,-4,-1,-2,-1,-5,-4}))
 }

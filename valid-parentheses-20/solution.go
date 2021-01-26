@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package valid_parentheses_20
 
 type stack []string
 
@@ -13,7 +11,7 @@ func (s stack) Pop() (stack, string) {
 	return s[:l-1], s[l-1]
 }
 
-func IsValid(s string) bool {
+func isValid(s string) bool {
 	if len(s) % 2 != 0 {
 		return false
 	}
@@ -38,8 +36,4 @@ func IsValid(s string) bool {
 	}
 
 	return len(stack) == 0
-}
-
-func main() {
-	fmt.Println(IsValid("(){}}{"))
 }

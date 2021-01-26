@@ -1,4 +1,4 @@
-package main
+package two_sum_1
 
 import (
 	"reflect"
@@ -15,7 +15,7 @@ func TestTwoSum(t *testing.T) {
 	}
 
 	for name, tc := range tests {
-		got := TwoSum(tc.items, tc.target)
+		got := twoSum(tc.items, tc.target)
 
 		if !reflect.DeepEqual(tc.want, got) {
 			t.Errorf("%s: expected '%v', got '%v'", name, tc.want, got)

@@ -1,4 +1,4 @@
-package main
+package longest_substring_without_repeating_characters_3
 
 import (
 	"testing"
@@ -17,7 +17,7 @@ func TestLengthOfLongestSubstring(t *testing.T) {
 	}
 
 	for name, tc := range tests {
-		got := LengthOfLongestSubstring(tc.items)
+		got := lengthOfLongestSubstring(tc.items)
 
 		if tc.want != got {
 			t.Errorf("%s: expected '%v', got '%v'", name, tc.want, got)

@@ -1,6 +1,6 @@
-package main
+package two_sum_1
 
-func TwoSum(nums []int, target int) []int {
+func twoSum(nums []int, target int) []int {
 	sum := []int{0,0}
 	complements := make(map[int]int)
 

@@ -1,4 +1,4 @@
-package main
+package climbing_stairs_70
 
 import "testing"
 
@@ -15,7 +15,7 @@ func TestClimbStairs(t *testing.T) {
 	}
 
 	for name, tc := range tests {
-		got := ClimbStairs(tc.input)
+		got := climbStairs(tc.input)
 
 		if got != tc.want {
 			t.Errorf("%s; expected '%v', got '%v'", name, tc.want, got)

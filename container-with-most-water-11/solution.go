@@ -1,6 +1,6 @@
-package main
+package container_with_most_water_11
 
-func MaxArea(height []int) int {
+func maxArea(height []int) int {
 	curMax, l := 0, 0
 	r := len(height) - 1
 
