@@ -9,7 +9,7 @@ func maxProfit(prices []int) int {
 	maxProfit := 0
 
 	for _, price := range prices {
-		maxProfit = maxInt(maxProfit, price - low)
+		maxProfit = maxInt(maxProfit, price-low)
 
 		if price < low {
 			low = price

@@ -3,9 +3,9 @@ package valid_parentheses_20
 import "testing"
 
 func TestIsValid(t *testing.T) {
-	tests := map[string]struct{
+	tests := map[string]struct {
 		input string
-		want bool
+		want  bool
 	}{
 		"Case 1": {input: "{}()[]", want: true},
 		"Case 2": {input: "({})", want: true},

@@ -3,17 +3,17 @@ package maximum_depth_of_binary_tree_104
 import "testing"
 
 func TestMaxDepth(t *testing.T) {
-	tests := map[string]struct{
+	tests := map[string]struct {
 		input *TreeNode
-		want int
+		want  int
 	}{
 		"Test Case 1": {
 			input: &TreeNode{
-				Val: 1,
+				Val:  1,
 				Left: nil,
 				Right: &TreeNode{
-					Val: 2,
-					Left: nil,
+					Val:   2,
+					Left:  nil,
 					Right: nil,
 				},
 			},
@@ -21,8 +21,8 @@ func TestMaxDepth(t *testing.T) {
 		},
 		"Test Case 2": {
 			input: &TreeNode{
-				Val: 0,
-				Left: nil,
+				Val:   0,
+				Left:  nil,
 				Right: nil,
 			},
 			want: 1},
@@ -31,20 +31,20 @@ func TestMaxDepth(t *testing.T) {
 			input: &TreeNode{
 				Val: 3,
 				Left: &TreeNode{
-					Val: 9,
-					Left: nil,
+					Val:   9,
+					Left:  nil,
 					Right: nil,
 				},
 				Right: &TreeNode{
 					Val: 20,
 					Left: &TreeNode{
-						Val: 15,
-						Left: nil,
+						Val:   15,
+						Left:  nil,
 						Right: nil,
 					},
 					Right: &TreeNode{
-						Val: 7,
-						Left: nil,
+						Val:   7,
+						Left:  nil,
 						Right: nil,
 					},
 				},

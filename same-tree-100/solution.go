@@ -1,9 +1,9 @@
 package same_tree_100
 
 type TreeNode struct {
-    Val int
-    Left *TreeNode
-    Right *TreeNode
+	Val   int
+	Left  *TreeNode
+	Right *TreeNode
 }
 
 func isSameTree(p *TreeNode, q *TreeNode) bool {

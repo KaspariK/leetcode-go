@@ -12,7 +12,7 @@ func (s stack) Pop() (stack, string) {
 }
 
 func isValid(s string) bool {
-	if len(s) % 2 != 0 {
+	if len(s)%2 != 0 {
 		return false
 	}
 
@@ -20,7 +20,7 @@ func isValid(s string) bool {
 
 	var stack stack
 	for _, c := range s {
-		if _, ok := charMap[string(c)]; ok{
+		if _, ok := charMap[string(c)]; ok {
 			stack = stack.Push(string(c))
 		} else {
 			if len(stack) == 0 {

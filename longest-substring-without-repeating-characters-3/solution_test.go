@@ -5,9 +5,9 @@ import (
 )
 
 func TestLengthOfLongestSubstring(t *testing.T) {
-	tests := map[string]struct{
+	tests := map[string]struct {
 		items string
-		want int
+		want  int
 	}{
 		"Test Case 1": {items: "kevin", want: 5},
 		"Test Case 2": {items: "keevin", want: 4},

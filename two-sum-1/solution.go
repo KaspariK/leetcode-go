@@ -1,7 +1,7 @@
 package two_sum_1
 
 func twoSum(nums []int, target int) []int {
-	sum := []int{0,0}
+	sum := []int{0, 0}
 	complements := make(map[int]int)
 
 	for i, n := range nums {

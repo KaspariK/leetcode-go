@@ -5,9 +5,9 @@ import (
 )
 
 func testReverseBits(t *testing.T) {
-	tests := map[string]struct{
+	tests := map[string]struct {
 		input uint32
-		want uint32
+		want  uint32
 	}{
 		"Test Case 1": {input: 43261596, want: 964176192},
 		"Test Case 2": {input: 4294967293, want: 3221225471},

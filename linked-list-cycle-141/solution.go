@@ -1,7 +1,7 @@
 package linked_list_cycle_141
 
 type ListNode struct {
-	Val int
+	Val  int
 	Next *ListNode
 }
 

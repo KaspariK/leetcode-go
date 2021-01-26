@@ -6,10 +6,10 @@ import (
 )
 
 func TestTwoSum(t *testing.T) {
-	tests := map[string]struct{
-		items []int
+	tests := map[string]struct {
+		items  []int
 		target int
-		want []int
+		want   []int
 	}{
 		"Test Case 1": {items: []int{46, 1562, 2244, 885, 2410, 3157, 1, 179, 4356}, target: 5241, want: []int{3, 8}},
 	}

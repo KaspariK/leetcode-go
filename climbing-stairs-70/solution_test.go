@@ -3,9 +3,9 @@ package climbing_stairs_70
 import "testing"
 
 func TestClimbStairs(t *testing.T) {
-	tests := map[string]struct{
+	tests := map[string]struct {
 		input int
-		want int
+		want  int
 	}{
 		"Test Case 1": {input: 2, want: 2},
 		"Test Case 2": {input: 3, want: 3},

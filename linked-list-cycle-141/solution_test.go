@@ -1,18 +1,19 @@
 package linked_list_cycle_141
 
 import "testing"
+
 // TODO: clean this crap up
 func TestHasCycle(t *testing.T) {
 	// Test Case 1
 	tc1Tail := &ListNode{
-		Val: -4,
+		Val:  -4,
 		Next: nil,
 	}
 
 	tc1Mid := &ListNode{
 		Val: 2,
 		Next: &ListNode{
-			Val: 0,
+			Val:  0,
 			Next: tc1Tail,
 		},
 	}
@@ -20,18 +21,18 @@ func TestHasCycle(t *testing.T) {
 	tc1Tail.Next = tc1Mid
 
 	tc1Head := &ListNode{
-		Val: 3,
+		Val:  3,
 		Next: tc1Mid,
 	}
 
 	// Test Case 2
 	tc2Head := &ListNode{
-		Val: 1,
+		Val:  1,
 		Next: nil,
 	}
 
 	tc2Tail := &ListNode{
-		Val: 1,
+		Val:  1,
 		Next: tc2Head,
 	}
 
@@ -39,13 +40,13 @@ func TestHasCycle(t *testing.T) {
 
 	// Test Case 3
 	tc3Head := &ListNode{
-		Val: 1,
+		Val:  1,
 		Next: nil,
 	}
 
-	tests := map[string]struct{
+	tests := map[string]struct {
 		input *ListNode
-		want bool
+		want  bool
 	}{
 		"Test Case 1": {input: tc1Head, want: true},
 		"Test Case 2": {input: tc2Head, want: true},

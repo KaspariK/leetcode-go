@@ -5,35 +5,35 @@ import (
 )
 
 func TestIsSameTree(t *testing.T) {
-	tests := map[string]struct{
+	tests := map[string]struct {
 		treeOne TreeNode
 		treeTwo TreeNode
-		want bool
+		want    bool
 	}{
 		"Test Case 1": {
 			TreeNode{
 				Val: 1,
 				Left: &TreeNode{
-					Val: 2,
-					Left: nil,
+					Val:   2,
+					Left:  nil,
 					Right: nil,
 				},
 				Right: &TreeNode{
-					Val: 3,
-					Left: nil,
+					Val:   3,
+					Left:  nil,
 					Right: nil,
 				},
 			},
 			TreeNode{
 				Val: 1,
 				Left: &TreeNode{
-					Val: 2,
-					Left: nil,
+					Val:   2,
+					Left:  nil,
 					Right: nil,
 				},
 				Right: &TreeNode{
-					Val: 3,
-					Left: nil,
+					Val:   3,
+					Left:  nil,
 					Right: nil,
 				},
 			},
@@ -43,18 +43,18 @@ func TestIsSameTree(t *testing.T) {
 			TreeNode{
 				Val: 1,
 				Left: &TreeNode{
-					Val: 2,
-					Left: nil,
+					Val:   2,
+					Left:  nil,
 					Right: nil,
 				},
 				Right: nil,
 			},
 			TreeNode{
-				Val: 1,
+				Val:  1,
 				Left: nil,
 				Right: &TreeNode{
-					Val: 2,
-					Left: nil,
+					Val:   2,
+					Left:  nil,
 					Right: nil,
 				},
 			},
@@ -64,26 +64,26 @@ func TestIsSameTree(t *testing.T) {
 			TreeNode{
 				Val: 1,
 				Left: &TreeNode{
-					Val: 2,
-					Left: nil,
+					Val:   2,
+					Left:  nil,
 					Right: nil,
 				},
 				Right: &TreeNode{
-					Val: 1,
-					Left: nil,
+					Val:   1,
+					Left:  nil,
 					Right: nil,
 				},
 			},
 			TreeNode{
 				Val: 1,
 				Left: &TreeNode{
-					Val: 1,
-					Left: nil,
+					Val:   1,
+					Left:  nil,
 					Right: nil,
 				},
 				Right: &TreeNode{
-					Val: 2,
-					Left: nil,
+					Val:   2,
+					Left:  nil,
 					Right: nil,
 				},
 			},
