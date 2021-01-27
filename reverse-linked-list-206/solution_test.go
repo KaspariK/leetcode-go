@@ -10,7 +10,39 @@ func TestReverseList(t *testing.T) {
 		input *ListNode
 		want  *ListNode
 	}{
-		"Test Case 1": {},
+		"Test Case 1": {
+			input: &ListNode{
+				Val: 1,
+				Next: nil,
+			},
+			want: &ListNode{
+				Val: 1,
+				Next: nil,
+			},
+		},
+		"Test Case 2": {
+			input: &ListNode{
+				Val: 1,
+				Next: &ListNode{
+					Val: 2,
+					Next: &ListNode{
+						Val: 3,
+						Next: nil,
+					},
+				},
+			},
+			want: &ListNode{
+				Val: 3,
+				Next: &ListNode{
+					Val: 2,
+					Next: &ListNode{
+						Val: 1,
+						Next: nil,
+					},
+				},
+			},
+		},
+		"Test Case 3": {input: nil, want: nil},
 	}
 
 	for name, tc := range tests {
