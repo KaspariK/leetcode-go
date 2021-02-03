@@ -7,30 +7,18 @@ import (
 
 func TestReverseList(t *testing.T) {
 	tests := map[string]struct {
-		input *ListNode
+		input []int
 		want  *ListNode
 	}{
 		"Test Case 1": {
-			input: &ListNode{
-				Val: 1,
-				Next: nil,
-			},
+			input: []int{1},
 			want: &ListNode{
 				Val: 1,
 				Next: nil,
 			},
 		},
 		"Test Case 2": {
-			input: &ListNode{
-				Val: 1,
-				Next: &ListNode{
-					Val: 2,
-					Next: &ListNode{
-						Val: 3,
-						Next: nil,
-					},
-				},
-			},
+			input: []int{1, 2, 3},
 			want: &ListNode{
 				Val: 3,
 				Next: &ListNode{
@@ -46,7 +34,8 @@ func TestReverseList(t *testing.T) {
 	}
 
 	for name, tc := range tests {
-		got := reverseList(tc.input)
+		a := SliceToLinkedList(tc.input)
+		got := reverseList(a)
 
 		if !reflect.DeepEqual(got, tc.want) {
 			t.Errorf("%s: expected '%v', got '%v'", name, tc.want, got)
