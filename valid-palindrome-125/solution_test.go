@@ -13,6 +13,9 @@ func TestIsPalindrome(t *testing.T) {
 		"Test Case 4": {input: "racecar", want: true},
 		"Test Case 5": {input: "a", want: true},
 		"Test Case 6": {input: "", want: true},
+		"Test Case 7": {input: "AbBa", want: true},
+		"Test Case 8": {input: "ab", want: false},
+		"Test Case 9": {input: "0P", want: false},
 	}
 
 	for name, tc := range tests {
